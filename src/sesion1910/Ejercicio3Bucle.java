@@ -1,14 +1,14 @@
 package sesion1910;
 
-public class Ejercicio1Bucle {
+public class Ejercicio3Bucle {
     public static void main(String[] args) {
 
-
-
-        for (int j =0; j<=100;j=j+5){
+        int j =0;
+       do{
 
             System.out.println(j);
-        }
+            j=j+5;
+        }while (j<=100);
 
 
     }

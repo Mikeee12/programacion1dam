@@ -1,11 +1,8 @@
 package sesion1910;
 
-public class Ejercicio1Bucle {
+public class Ejercicio4Bucle {
     public static void main(String[] args) {
-
-
-
-        for (int j =0; j<=100;j=j+5){
+        for (int j =320; j>=160;j=j-20){
 
             System.out.println(j);
         }
@@ -13,5 +10,3 @@ public class Ejercicio1Bucle {
 
     }
 }
-
-

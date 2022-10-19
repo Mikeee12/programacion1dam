@@ -1,17 +1,17 @@
 package sesion1910;
 
-public class Ejercicio1Bucle {
+public class Ejercicio2Bucle {
     public static void main(String[] args) {
-
-
-
-        for (int j =0; j<=100;j=j+5){
+        int j =0;
+        while (j<=100){
 
             System.out.println(j);
+            j=j+5;
         }
 
 
     }
 }
+
 
 
