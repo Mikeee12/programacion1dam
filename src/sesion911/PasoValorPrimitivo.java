@@ -6,8 +6,6 @@ public class PasoValorPrimitivo {
         cambiarEdadMike(edadMike);
         System.out.println("La edad de Mike es "+edadMike);
     }
-    private static void cambiarEdadMike(int edad) {
-
-        edad=50;
+    private static void cambiarEdadMike(int edad) {edad=50;
     }
 }
