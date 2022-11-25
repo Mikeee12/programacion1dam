@@ -7,7 +7,7 @@ public class ArrayEjercicio4 {
         System.out.println("Array de numeros ordenados"+ java.util.Arrays.toString(numeros));
         String[] nombres = {"Mike","Pepe","Julio"};
         java.util.Arrays.sort(numeros);
-        System.out.println("Array de strings ordenados");
+        System.out.println("Array de strings ordenados"+ java.util.Arrays.toString(nombres));
     }
 
 }
