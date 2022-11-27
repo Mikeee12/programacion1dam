@@ -1,0 +1,5 @@
+package Practica_Mike_Noriega_Chaves;
+
+public enum mes {
+    ENERO,FEBRERO,MARZO,ABRIL,JUNIO,JULIO,AGOSTO,SEPTIEMBRE,NOVIEMBRE,DICIEMBRE
+}
