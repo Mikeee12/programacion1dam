@@ -5,49 +5,45 @@ import java.util.Scanner;
 
 public class examenejemplo1 {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         String texto="";
-        texto=solicitar_usuario(texto);
-        String[] array_string = convertir_array_string(texto);
-        System.out.println(Arrays.toString(array_string));
-        int[] array_entero = convertir_array_enteros(array_string);
-        int sumatorio = suma_enteros(array_entero);
-        System.out.println("el resultado de la suma de los elementos del array "+Arrays.toString(array_entero)+"es "+sumatorio);
+        texto=solicitartexto(texto);
+        String[] array;
+        array= hacerarray(texto);
+        System.out.println("el texto convertido a array es"+ Arrays.toString(array));
+        int[] arrayenteros =convertirarray(array);
+        System.out.println("el nuevo array de enteros es"+ Arrays.toString(array));
+        int suma = sumarvalores(arrayenteros);
+        System.out.println("la suma del array de enteros es"+suma);
     }
 
-    private static int suma_enteros(int[] array_entero) {
+    private static int sumarvalores(int[] arrayenteros) {
         int resultado=0;
-        for (int i=0;i<array_entero.length;i++){
-            resultado=resultado+array_entero[i];
+        for (int i=0;i<arrayenteros.length;i++){
+            resultado=resultado+ arrayenteros[i];
         }
 
 
         return resultado;
     }
 
-    private static int[] convertir_array_enteros(String[] array_string) {
-        int[] array_resultante = new int[array_string.length];
-        for (int i=0; i<array_string.length; i++){
-
-            array_resultante[i]=Integer.parseInt(array_string[i]);
-
+    private static int[] convertirarray(String[] array) {
+        int[] arrayenteros = new int[array.length];
+        for (int i=0;i<array.length;i++){
+            arrayenteros[i]=Integer.parseInt(array[i]);
         }
-
-
-        return array_resultante;
-
+        return arrayenteros;
     }
 
-    private static String[] convertir_array_string(String texto) {
-        String[] array_string = texto.split(";");
-        return array_string;
+    private static String[] hacerarray(String texto) {
+        String[] array = texto.split(";");
+        return array;
     }
 
-    private static String solicitar_usuario(String texto) {
+    private static String solicitartexto(String texto) {
+        System.out.println("Escriba numeros separados por ;");
         Scanner sc = new Scanner(System.in);
-        System.out.println("Introduzcame un texto compuesto por numeros y separado por ,");
-        texto= sc.next();
+        texto=sc.next();
         return texto;
     }
-
-
 }
